@@ -1,38 +1,64 @@
-.App {
+.calculator {
+  max-width: 320px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #292929;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+}
+
+.head {
   text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display {
+  font-size: 2em;
+  text-align: right;
+  padding: 15px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttons button {
+  font-size: 1.4em;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #444;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttons button:hover {
+  background-color: #555;
 }
 
-.App-link {
-  color: #61dafb;
+.name-button {
+  font-size: 1.3rem;
+  padding: 12px 25px;
+  margin-top: 20px;
+  background-color: #FF6347; /* Change to your preferred color */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name-button:hover {
+  background-color: #FF4500; /* Change to your preferred color on hover */
 }
